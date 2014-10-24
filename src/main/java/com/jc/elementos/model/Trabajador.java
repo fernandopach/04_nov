@@ -50,6 +50,13 @@ public class Trabajador implements Serializable {
         this.idTrabajador = idTrabajador;
     }
 
+    public Trabajador(Integer idTrabajador, String nombre, String paterno, String materno) {
+        this.idTrabajador = idTrabajador;
+        this.nombre = nombre;
+        this.paterno = paterno;
+        this.materno = materno;
+    }
+
     public Integer getIdTrabajador() {
         return idTrabajador;
     }
@@ -104,7 +111,9 @@ public class Trabajador implements Serializable {
 
     @Override
     public String toString() {
-        return "com.jc.elementos.model.Trabajador[ idTrabajador=" + idTrabajador + " ]";
+        return "Trabajador{" + "idTrabajador=" + idTrabajador + ", nombre=" + nombre + ", paterno=" + paterno + ", materno=" + materno + '}';
+    }
+
     }
     
-}
+
